@@ -558,6 +558,9 @@ footer span a:hover {
 
 /* responsive media query start  */
 @media (max-width: 1300px) {
+  .home {
+    height: 100%;
+  }
   .home .max-width {
     margin-left: 0px;
   }
@@ -666,12 +669,30 @@ footer span a:hover {
   }
   
 }
-
 @media (max-width: 500px) {
   .home .home-content .text-2 {
     font-size: 50px;
   }
   .home .home-content .text-3 {
     font-size: 27px;
+  }
+  .about .about-content .right .text,
+  .skills .skills-content .left .text {
+    font-size: 19px;
+  }
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
   }
 }
