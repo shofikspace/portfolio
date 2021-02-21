@@ -15,6 +15,13 @@ $(document).ready(function(){
   // slide-up script 
   $('.scroll-up-btn').click(function(){
     $('html').animate({scrollTop: 0});
+    // removing smooth scroll on slide-up button click
+    $('html').css("scrollBehavior", "auto");
+  });
+
+  $('.navbar .menu li a').click(function(){
+    // applying again smooth scroll on menu items click
+    $('html').css("scrollBehavior", "smooth");
   });
 
   // toggle menu/navbar script
@@ -27,13 +34,13 @@ $(document).ready(function(){
   var typed = new Typed(".typing", {
     strings: ["Developer", "Designer", "Freelancer"],
     typeSpeed: 100,
-    backspeed: 60,
+    backpeed: 60,
     loop: true
   });
   var typed = new Typed(".typing-2", {
     strings: ["Developer", "Designer", "Freelancer"],
     typeSpeed: 100,
-    backspeed: 60,
+    backSpeed: 60,
     loop: true
   });
 
@@ -43,7 +50,7 @@ $(document).ready(function(){
     margin: 20,
     loop: true,
     autoplayTimeOut: 2000,
-    autoplayHoverpause: true,
+    autoplayHoverPause: true,
     responsive: {
       0:{
         items: 1,
@@ -60,10 +67,4 @@ $(document).ready(function(){
     }
 
   });
-
-
-
-
-
-
 });
