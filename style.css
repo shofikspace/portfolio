@@ -59,7 +59,7 @@ html {
 .navbar .menu li a:hover {
   color: crimson;
 }
-.navbar.sticky .munu li a:hover {
+.navbar.sticky .menu li a:hover {
   color: #fff;
 }
 
